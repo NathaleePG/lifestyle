@@ -1,0 +1,500 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+@font-face{
+    font-family: myDidot;
+    src:url("didot.ttf");
+}
+
+@font-face{
+    font-family: myAvenir;
+    src:url("avenir.otf");
+}
+
+body{
+    font-family: myDidot, "Century Gothic";
+}
+
+.container{
+    height:100%;
+    width:100%;
+}
+
+#containerSec{
+    position:absolute;
+    background-color:white;
+    text-align:center;
+}
+
+#containerSec > #fixed{
+    position:fixed;
+    background-color: white;
+    width:100%;
+    z-index:3;
+    min-height:105px;
+}
+
+#containerSec #logon1{
+    position:absolute;
+    top:18px;
+    width:81px;
+    height:75px;
+    background:url("logo2.jpg") center;
+    background-size:81px 75px;
+    margin:auto;
+    left:0;
+    right:400px;
+}
+#containerSec #topHeader{
+    position:relative;
+    font-size:2.5em;
+}
+
+#topHeader a{
+    color:black;
+    text-decoration:none;
+}
+
+.aligntop{
+    top:25px;
+}
+
+#containerSec form{
+    position:absolute;
+    top:65px;
+    right:1%;
+}
+
+form > input{
+    width:150px;
+    font-style:italic;
+    border:1px solid rgb(196, 198, 200);
+    color:rgb(196, 198, 200);
+    padding:5px;
+    font-family: myDidot;
+}
+
+form > input:hover{
+    border-color:black;
+}
+
+#toggle{
+    position:absolute;
+    left:2px;
+    top:75px;
+    opacity:0.25;
+}
+#containerSec > #fixed > ul:not(.icons){
+    padding:2px 0;
+    position:relative;
+    margin-top:40px;
+    text-align:center;
+    border:1px solid black;
+    border-left:0;
+    border-right:0;
+    z-index:3;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li{
+    position:relative;
+    display:inline-block;
+    border-radius:5px;
+    width:185px;
+    font-size:0.9em;
+    margin:0 2%;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > a{
+    text-decoration: none;
+    display:block;
+    color:black;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > ul{
+    position:absolute;
+    list-style-type:none;
+    width:97%;
+    left:1.5%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px;
+    font-family: myAvenir, myDidot;
+    z-index:5;
+    padding-top:5px;
+    display:none;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > ul > li{
+    position:relative;
+    line-height:40px;
+    display:none;
+    text-align:left;
+    border-top:0.1em solid white;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > ul > li > a{
+    text-decoration:none;
+    color:black;
+    padding-left:30px;
+    font-size:0.9em;
+    display:block;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li:hover > ul{
+    display:block;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li:hover > ul > li{
+    display:block;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > ul > li:hover > a{
+    padding-left:40px;
+}
+
+li.last{
+    padding-bottom:20px;
+}
+li span{
+    position:absolute;
+    left:5px;
+}
+
+#l1{
+    background-color:rgb(249, 220, 236);
+}
+
+#i1{
+    background-color:rgba(249, 220, 236, 0.95);
+}
+
+#l2{
+    background-color:rgb(249, 221, 252);
+}
+
+#i2{
+    background-color:rgba(249, 221, 252, 0.95);
+}
+#l3{
+    background-color:rgb(215, 252, 248);
+}
+#l4{
+    background-color:rgb(205, 249, 212);
+}
+#i4{
+    background-color:rgba(205, 249, 212, 0.95);
+}
+#l5{
+    background-color:rgb(254, 242, 215);
+}
+
+#i5{
+    background-color:rgba(254, 242, 215, 0.95);
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > #i1 a:hover{
+    background-color:rgba(254, 225, 241, 1);
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > #i2 a:hover{
+    background-color:rgba(254, 226, 257, 1);
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > #i4 a:hover{
+    background-color:rgba(210, 254, 217, 1);
+}
+
+#containerSec > #fixed > ul:not(.icons) > li > #i5 a:hover{
+    background-color:rgba(259, 247, 220, 1);
+}
+
+.icons{
+    margin-top:5px;
+    text-align:left;
+    margin-left:2.5%;
+}
+.icons > li{
+    display:inline-block;
+    margin:0 6px;
+}
+
+.resize{
+    height:15px;
+}
+
+#main{
+    position:relative;
+    margin:200px 0;
+    overflow:hidden;
+}
+
+#main > #head{
+    position:relative;
+    background: linear-gradient(180deg, rgba(249, 221, 252, 0.95), rgba(237, 209, 240, 0.95)); ;
+    display:inline-block;
+    padding:15px 75px;
+    margin-bottom:50px;
+    float:left;
+    box-shadow:1px 1px 15px 1px black;
+
+}
+
+#head > p{
+    display:inline-block;
+}
+#key{
+    font-size:2.15em;
+    text-shadow: 2px 2px rgba(207, 180, 210, 0.95);
+}
+#value{
+    font-style:italic;
+    border-left:1px solid black;
+    margin-left:20px;
+    padding-left:20px;
+    font-size:1.25em;
+}
+
+#value a{
+    text-decoration:none;
+    color:black;
+    text-shadow: 2px 2px rgba(232, 205, 235, 0.95);
+}
+
+#main .sub{
+    clear:both;
+    font-size:1.25em;
+    text-align:left;
+    margin: 0 0 50px 5%;
+}
+
+#main > ul.mainList{
+    position:relative;
+    width:90%;
+    margin-left:5%;
+    list-style-type:none;
+    margin-bottom:50px;
+}
+
+#main ul.mainList > li{
+    position:relative;
+    display:inline-block;
+    width:300px;
+    height:400px;
+    border:2px solid #9b9b9b;
+    margin:15px 2.5%;
+    box-shadow:1px 1px 5px 1px gray;
+}
+
+.imgCon{
+    position:absolute;
+    height:275px;
+    width:100%;
+}
+
+.imgCon > div{
+    width:150px;
+    height:150px;
+    background-color: rgba(225, 163, 193, 0.7);
+    box-shadow:1px 1px 3px 1px black;
+    margin: 67px auto 0 auto;
+    overflow:hidden;
+}
+
+.imgCon > div > a{
+    height:100%;
+    display:block;
+    font-size:1.75em;
+    text-decoration: none;
+    color:black;
+}
+
+#b1 > div > a{
+    margin-top:8px;
+}
+
+#b2 > div > a{
+    margin-top:30px;
+}
+
+.imgCon > div:hover{
+    background-color: rgba(225, 225, 225, 0.8);
+}
+
+#b1{
+    background:url("b1.jpg") center;
+}
+
+#b2{
+    background:url("b2.jpg") center;
+}
+
+.mainList > li > a{
+    position:relative;
+    top:300px;
+    text-transform: uppercase;
+    color:black;
+    font-size:1.25em;
+}
+
+.mainList> li > p{
+    position:absolute;
+    top:335px;
+    font-size:0.9em;
+    color:gray;
+    font-style:italic;
+}
+
+.mainList p > span{
+    text-decoration:underline;
+    position:relative;
+}
+
+
+#main #border{
+    width:75%;
+    margin-left:12.5%;
+    height:1px;
+    border-bottom:3px solid black;
+    margin-bottom:50px;
+}
+#main ul#blogs{
+    margin-bottom:0;
+}
+#blogs > li > a{
+    text-transform:lowercase;
+}
+
+#blogs > li > p{
+    width:100%;
+    text-align:center;
+    top:345px;
+}
+
+#e1{
+    background:url("e1.jpg") center;
+}
+#root{
+    position:relative;
+    width:90%;
+    clear:both;
+    border-top: 0.2em solid black;
+    margin:auto;
+    padding-bottom:20px;
+}
+
+.logon1{
+    position:relative;
+    background: url("logo2.jpg") center;
+    width:81px;
+    height:75px;
+    background-size:81px 75px;
+    margin:15px auto;
+}
+
+#containerSec #root > ul{
+    list-style: none;
+}
+
+#root > ul > li{
+    display:inline-block;
+}
+
+.left{
+    position:absolute;
+    left:1%;
+}
+
+.left > ul{
+    list-style:none;
+}
+
+.left > ul > li{
+    display:inline-block;
+    margin:0 8px;
+}
+
+.left > ul > li > a{
+    text-decoration:none;
+    color:black;
+    display:block;
+}
+
+#centered{
+    width:450px;
+    position:absolute;
+    margin:auto;
+    left:0;
+    right:0;
+}
+
+#root .icons{
+    position:absolute;
+    right:1%;
+    bottom:20px;
+}
+
+#centered p{
+    display:inline;
+    font-size:0.9em;
+}
+
+.icons li{
+    opacity:0.6;
+}
+
+@media screen and (max-width:900px){
+    #root #centered{
+        position:relative;
+        width:100%;
+        margin:15px 0;
+    }
+
+    #root .left{
+        position:relative;
+        width:100%;
+    }
+
+    #root .icons{
+        position:relative;
+        width:100%;
+        bottom:0;
+    }
+}
+
+@media screen and (max-width:703px) {
+    #containerSec #fixed > ul {
+        display:none;
+    }
+    #toggle{
+        opacity:0.9;
+    }
+}
+
+@media screen and (max-width:575px) {
+    #containerSec form{
+        display:none;
+    }
+}
+
+@media screen and (max-width:500px){
+    #containerSec #logon1{
+        right:0;
+    }
+    #containerSec #fixed > ul:not(.icons) > li{
+        margin-bottom:3px;
+        margin-top:3px;
+        line-height:30px;
+    }
+    #main > ul.mainList{
+        margin-left:0;
+        width:100%;
+    }
+}
+
+@media screen and (max-width:425px){
+    #containerSec > #fixed > .icons{
+        text-align:center;
+    }
+}
