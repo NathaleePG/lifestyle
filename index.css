@@ -238,6 +238,7 @@ li span{
     margin-bottom:50px;
     float:left;
     box-shadow:1px 1px 15px 1px black;
+    opacity:0;
 
 }
 
@@ -247,6 +248,7 @@ li span{
 #key{
     font-size:2.15em;
     text-shadow: 2px 2px rgba(207, 180, 210, 0.95);
+    opacity:0;
 }
 #value{
     font-style:italic;
@@ -260,6 +262,7 @@ li span{
     text-decoration:none;
     color:black;
     text-shadow: 2px 2px rgba(232, 205, 235, 0.95);
+    opacity:0;
 }
 
 #main .sub{
@@ -267,14 +270,16 @@ li span{
     font-size:1.25em;
     text-align:left;
     margin: 0 0 50px 5%;
+    opacity:0;
 }
 
 #main > ul.mainList{
     position:relative;
-    width:90%;
-    margin-left:5%;
     list-style-type:none;
     margin-bottom:50px;
+    width:100%;
+    text-align:left;
+    opacity:0;
 }
 
 #main ul.mainList > li{
@@ -285,6 +290,7 @@ li span{
     border:2px solid #9b9b9b;
     margin:15px 2.5%;
     box-shadow:1px 1px 5px 1px gray;
+    text-align:center;
 }
 
 .imgCon{
@@ -296,7 +302,7 @@ li span{
 .imgCon > div{
     width:150px;
     height:150px;
-    background-color: rgba(225, 163, 193, 0.7);
+    background-color: rgba(225, 225, 225, 0.8);
     box-shadow:1px 1px 3px 1px black;
     margin: 67px auto 0 auto;
     overflow:hidden;
@@ -319,7 +325,7 @@ li span{
 }
 
 .imgCon > div:hover{
-    background-color: rgba(225, 225, 225, 0.8);
+    box-shadow:1px 1px 10px 1px black;
 }
 
 #b1{
@@ -374,6 +380,21 @@ li span{
 
 #e1{
     background:url("e1.jpg") center;
+}
+
+#e2{
+    background:url('e2.jpg') center;
+}
+#e1 > div > a{
+    margin-top:8px;
+}
+#e2 > div > a{
+    margin-top:25px;
+}
+#main > ul#blogs > li#second > p{
+    top:330px;
+    font-style:italic;
+    color: rgb(133, 136, 141);
 }
 #root{
     position:relative;

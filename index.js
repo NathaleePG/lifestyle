@@ -77,6 +77,20 @@ $(function() {
         onResize();
     });
 
+    $("#head").delay(200).animate({
+        opacity:1
+    }, 500);
+    $("#key").delay(800).animate({
+        opacity:1
+    }, 500);
+    $("#value > a").delay(1200).each(function(){
+        $(this).delay(250*($(this).index() + 1)).animate({opacity:1},300);
+    });
+
+    $("#main").children().not("#head").delay(2300).each(function(){
+        $(this).delay(300*($(this).index() + 1)).animate({opacity:1}, 500);
+    });
+
 
     /*
     $nav.on("mouseover", function(){
