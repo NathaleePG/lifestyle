@@ -370,12 +370,16 @@ li span{
 }
 #blogs > li > a{
     text-transform:lowercase;
+    top:285px;
+    font-family:myAvenir;
 }
 
 #blogs > li > p{
     width:100%;
     text-align:center;
-    top:345px;
+    top:325px;
+    font-style:italic;
+    color: rgb(133, 136, 141);
 }
 
 #e1{
@@ -383,7 +387,10 @@ li span{
 }
 
 #e2{
-    background:url('e2.jpg') center;
+     background:url('e2.jpg') center;
+}
+#e3{
+    background:url('e3.jpg') center;
 }
 #e1 > div > a{
     margin-top:8px;
@@ -391,11 +398,11 @@ li span{
 #e2 > div > a{
     margin-top:25px;
 }
-#main > ul#blogs > li#second > p{
-    top:330px;
-    font-style:italic;
-    color: rgb(133, 136, 141);
+
+#e3 > div > a{
+    margin-top:25px;
 }
+
 #root{
     position:relative;
     width:90%;
